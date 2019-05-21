@@ -1,39 +1,78 @@
 //app.js
 App({
-  onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
+      /*
+   onLaunch: function () {
+     // 展示本地存储能力
+     var logs = wx.getStorageSync('logs') || []
+     logs.unshift(Date.now())
+     wx.setStorageSync('logs', logs)
 
-              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-              // 所以此处加入 callback 以防止这种情况
-              if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
-              }
-            }
-          })
+     // 登录
+     wx.login({
+       success: res => {
+         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+       }
+     })
+     // 获取用户信息
+     wx.getSetting({
+       success: res => {
+         if (res.authSetting['scope.userInfo']) {
+           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+           wx.getUserInfo({
+             success: res => {
+               // 可以将 res 发送给后台解码出 unionId
+               this.globalData.userInfo = res.userInfo
+
+               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+               // 所以此处加入 callback 以防止这种情况
+               if (this.userInfoReadyCallback) {
+                 this.userInfoReadyCallback(res)
+               }
+             }
+           })
+         }
+       }
+     })
+      */
+    onLaunch:function(){
+      var that = this; //使用设备可视宽高
+      wx.getSystemInfo({ //获取系统信息
+        success:function(res){
+          that.globalData.windowWidth = res.windowWidth;
+          that.globalData.windowHeight = res.windowHeight;
         }
+      })
+    },
+
+    getUserInfo:function(cb){
+      var that = this;
+      if(this.globalData.userInfo){
+        typeof cb === 'function' && cb(this.globalData.userInfo);
+      }else{
+        wx.login({
+          success:function () {
+            wx.getUserInfo({
+              success:function (res) {
+                that.globalData.userInfo = res.userInfo;
+                typeof cb == 'function' && cb(that.globalData.userInfo)
+              }
+            })
+          }
+        })
       }
-    })
   },
+
   globalData: {
-    userInfo: null
+    userInfo: null,
+    windowWidth:0,
+    windowHeight:0,
+    doubanBase:'https://www.easy-mock.com/mock/5cd0faf6e1fe52746e062d07/weapp/douban/',
+    inTheaters:'movie/in_theaters',
+    commingSoon:'movie/coming_soon',
+    top250:'movie/top250',
+    subject:'movie/subject',
+    celebrity:'movie/celebrity',
+    search:'movie/search'
   }
 })

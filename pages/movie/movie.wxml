@@ -1,0 +1,93 @@
+<!--pages/movie/movie.wxml-->
+
+<view class="container" bindtouchmove="handleTouchMove">
+    <view class="session-search session-search-spacing">
+        <icon class="session-search-icon" type="search" size="16"></icon>
+        <text class="search-placeholder" bindtap="bindSearchNavigate">搜索电影</text>
+    </view>
+
+    <view class="page-session page-session-spacing">
+        <view class="session-header">
+            <text class="session-header-title">影院热映</text>
+            <text class="session-header-more" bindtap="bindMore" data-type-id="intheaters">更多</text>
+        </view>
+
+        <view class="session-content session-content-spacing">
+           <scroll-view class="movie-scroll" scroll-x="true">
+               <view class="movie-wrapper">
+                   <view class="movie-content">
+                       <image class="poster" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2554981472.webp"></image>
+                       <text class="name">电影名称{{title}}</text>
+                       <view class="rating">
+                           <view class="rating-star allstar{{rating.average|0}}"></view>
+                           <text class="rating-average">???{{rating.average}}</text>
+                       </view>
+                   </view>
+               </view>
+               <view class="movie-wrapper">
+                   <view class="movie-content">
+                       <image class="poster" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2554981472.webp"></image>
+                       <text class="name">电影名称{{title}}</text>
+                       <view class="rating">
+                           <view class="rating-star allstar{{rating.average|0}}"></view>
+                           <text class="rating-average">???{{rating.average}}</text>
+                       </view>
+                   </view>
+               </view>
+               <view class="movie-wrapper">
+                   <view class="movie-content">
+                       <image class="poster" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2554981472.webp"></image>
+                       <text class="name">电影名称{{title}}</text>
+                       <view class="rating">
+                           <view class="rating-star allstar{{rating.average|0}}"></view>
+                           <text class="rating-average">???{{rating.average}}</text>
+                       </view>
+                   </view>
+               </view>
+               <view class="movie-wrapper">
+                   <view class="movie-content">
+                       <image class="poster" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2554981472.webp"></image>
+                       <text class="name">电影名称{{title}}</text>
+                       <view class="rating">
+                           <view class="rating-star allstar{{rating.average|0}}"></view>
+                           <text class="rating-average">???{{rating.average}}</text>
+                       </view>
+                   </view>
+               </view>
+               <view class="movie-wrapper">
+                   <view class="movie-content">
+                       <image class="poster" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2554981472.webp"></image>
+                       <text class="name">电影名称{{title}}</text>
+                       <view class="rating">
+                           <view class="rating-star allstar{{rating.average|0}}"></view>
+                           <text class="rating-average">???{{rating.average}}</text>
+                       </view>
+                   </view>
+               </view>
+               <view class="movie-wrapper">
+                   <view class="movie-content">
+                       <image class="poster" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2554981472.webp"></image>
+                       <text class="name">电影名称{{title}}</text>
+                       <view class="rating">
+                           <view class="rating-star allstar{{rating.average|0}}"></view>
+                           <text class="rating-average">???{{rating.average}}</text>
+                       </view>
+                   </view>
+               </view>
+           </scroll-view>
+
+        </view>
+    </view>
+
+    <view class="page-session page-session-spacing">
+        <view class="session-header">
+            <text class="session-header-title">即将上映</text>
+            <text class="session-header-more" bindtap="bindMore" data-type-id="intheaters">更多</text>
+        </view>
+
+        <view class="session-content session-content-spacing">
+
+        </view>
+    </view>
+
+</view>
