@@ -265,7 +265,7 @@ Page({
     var typeId = event.currentTarget.dataset.typeId;
     var typeTitle = event.currentTarget.dataset.typeTitle;
     wx.navigateTo({
-      url: '/pages/movie/selected/selected?typeId=' + typeId + "&&typeTitle=" + typeTitle
+      url: '/pages/movie/selected/selected?typeId= ' + typeId + "&&typeTitle=" + typeTitle
     });
   },
   /** 跳转电影详情页 */
@@ -273,7 +273,7 @@ Page({
     var id = event.currentTarget.dataset.id;
     wx.navigateTo({
       url: '/pages/movie/movie-detail/movie-detail?id=' + id
-    });
+    });   
   },
   /**
    * 页面相关事件处理函数--监听用户下拉动作
