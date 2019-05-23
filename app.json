@@ -1,7 +1,9 @@
 {
   "pages": [
-
+    "pages/movie/movie-detail/movie-detail",    
     "pages/movie/movie"
+
+    
 
   ],
   "window": {

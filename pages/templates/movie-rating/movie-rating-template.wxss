@@ -1,0 +1,64 @@
+
+
+.rating-star {
+  content:"";
+  display:inline-block;
+  width:67px;
+  height:11px;
+  position:absolute;
+  background-repeat:no-repeat;
+  background: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png) no-repeat;
+  background: -webkit-image-set(url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png) 1x, url(https://img3.doubanio.com/f/shire/0147ca9efddcac80050854590d26bee587b008df/pics/rating_icons/ic_rating_s@2x.png) 2x) no-repeat;
+}
+
+.allstar10 {
+  background-position: 0px 0px;
+}
+
+.allstar9 {
+  background-position: 0px -11px;
+}
+
+.allstar8 {
+  background-position: 0px -22rpx;
+}
+
+.allstar7 {
+  background-position: 0px -33px;
+}
+
+.allstar6 {
+  background-position: 0px -44px;
+}
+
+.allstar5 {
+  background-position: 0px -55px;
+}
+
+.allstar4 {
+  background-position: 0px -66px;
+}
+
+.allstar3 {
+  background-position: 0px -77px;
+}
+
+.allstar2 {
+  background-position: 0px -88px;
+}
+
+.allstar1 {
+  background-position: 0px -99px;
+}
+
+.allstar0 {
+  background-position: 0px -110px;
+}
+.rating-average { 
+  margin-left:130rpx;
+  font-size:20rpx;
+  line-height:22rpx;
+  color:#878787;
+  height: 22rpx;
+}
+

@@ -71,8 +71,8 @@ App({
     inTheaters:'movie/in_theaters',
     commingSoon:'movie/coming_soon',
     top250:'movie/top250',
-    subject:'movie/subject',
-    celebrity:'movie/celebrity',
+    subject:'movie/subject/',
+    celebrity:'movie/celebrity/',
     search:'movie/search'
   }
 })
