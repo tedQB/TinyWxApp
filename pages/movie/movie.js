@@ -92,6 +92,7 @@ Page({
   },
   /** 组装电影数据 */
   processMovieListData: function (data, settedKey, categoryTitle) {
+    console.log(data);
     var movies = [];
     for (let idx in data.subjects) {
       var subject = data.subjects[idx];
@@ -120,11 +121,13 @@ Page({
       movies.push(temp);
     }
     var readyData = {};
-    readyData[settedKey] = {
+    readyData[settedKey] = { //settedKey = 'inTheaters/comingSoon'
       categoryTitle: categoryTitle,
       movies: movies
     };
+    console.log(readyData);
     this.setData(readyData);
+    //thi.setData 向页面中注入数据
   },
   /** 滑动屏幕 */
   handleTouchMove: function (event) {
