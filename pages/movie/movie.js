@@ -245,6 +245,7 @@ Page({
     };
 
     this.setData(readyData);
+    console.log(readyData);
   },
   /** 搜索电影 */
   bindSearchNavigate: function (event) {

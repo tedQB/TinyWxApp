@@ -1,5 +1,6 @@
 <!--pages/movie/movie.wxml-->
 <import src="/pages/templates/movie-grid/movie-grid-template.wxml" />
+<import src="/pages/templates/select-grid/selected-grid-template.wxml" />
 <view class="container" bindtouchmove="handleTouchMove">
     <view class="session-search session-search-spacing">
         <icon class="session-search-icon" type="search" size="16"></icon>
@@ -28,8 +29,8 @@
 
         <view class="session-content session-content-spacing">
            <scroll-view class="movie-scroll" scroll-x="true">
-               <block wx:for="{{comingSoon.movies}}">
-                   <template is="movie-grid-template" data="{{...item}}" />
+               <block wx:for="{{comingSoon.movies}}" wx:for-item="ssss">
+                   <template is="movie-grid-template" data="{{...ssss}}" />
                </block>
            </scroll-view>
         </view>

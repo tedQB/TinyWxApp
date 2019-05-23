@@ -1,5 +1,6 @@
 /* pages/movie/movie.wxss */
 
+@import "/pages/templates/select-grid/selected-grid-template.wxss";
 .movie-scroll, selected-scroll {
   width: 100%;
   white-space: nowrap;
@@ -125,3 +126,4 @@
   color:#878787;
   height: 22rpx;
 }
+

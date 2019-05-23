@@ -1,5 +1,4 @@
-/**app.wxss**/
-
+/**app.wxss 页面整体主题框架结构css**/
 page {
     height:100%;
     background:#f8f8f8;
