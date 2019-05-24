@@ -24,7 +24,7 @@ Page({
    */
   onLoad: function (options) {
     var inTheatersURL = app.globalData.doubanBase + app.globalData.inTheaters;
-    var comingSoonURL = app.globalData.doubanBase + app.globalData.commingSoon;
+    var comingSoonURL = app.globalData.doubanBase + app.globalData.comingSoon;
 
     console.log(inTheatersURL,comingSoonURL)
 
