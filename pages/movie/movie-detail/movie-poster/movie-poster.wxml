@@ -1,0 +1,12 @@
+
+<view class="container">
+    <scroll-view class='poster-scroll' scroll-x="{{true}}">
+        <block wx:for="{{poster}}" wx:for-item="item">
+            <view class="poster-wrapper">
+                <view class="poster-content">
+                    <image class="poster" src="{{item}}"></image>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

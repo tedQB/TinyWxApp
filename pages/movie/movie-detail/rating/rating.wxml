@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="session-rating">
+        <view class="rating">
+            <view class="rating-dec">
+                <text class="desc-text {{mark == 1 ? 'desc-text-show' : ''}}">很差</text>
+                <text class="desc-text {{mark == 2 ? 'desc-text-show' : ''}}">较差</text>
+                <text class="desc-text {{mark == 3 ? 'desc-text-show' : ''}}">还行</text>
+                <text class="desc-text {{mark == 4 ? 'desc-text-show' : ''}}">推荐</text>
+                <text class="desc-text {{mark == 5 ? 'desc-text-show' : ''}}">力荐</text>                
+            </view> 
+        </view>
+        <view class="rating-stars-wrapper" bindtap="bindMark">
+            <block wx:for="{{[1,2,3,4,5]}}" wx:for-item="id">
+                <image class="{{mark>=id?'star-HL':'star'}}" 
+                                     data-id="{{id}}">
+                </image>
+            </block>
+        </view>
+        <view class="session-textarea">
+            <textarea class="rating-textarea" placeholder-class="rating-placeholder" placeholder="写下看过之后的感想。。。">
+            </textarea>
+        </view>
+    </view>
+    <button class="confirm" size="default" type="primary" bindtap="handleComfirm">确定</button>
+</view>

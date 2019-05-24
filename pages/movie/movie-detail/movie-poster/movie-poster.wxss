@@ -1,0 +1,24 @@
+
+.poster-scroll {
+  width: 100vw;
+  height: 100vh;
+  white-space: nowrap;
+}
+
+.poster-wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.poster-content {
+  display: flex;
+  height: 100%;
+}
+
+.poster-content .poster {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  white-space: nowrap;
+}
