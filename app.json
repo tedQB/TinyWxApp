@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/movie/movie-detail/rating/rating",
-    "pages/movie/movie-detail/movie-detail",    
-    "pages/movie/movie-detail/movie-poster/movie-poster",
-    
-    "pages/movie/movie"
 
-    
+    "pages/movie/movie",
+    "pages/movie/movie-detail/movie-detail",
+    "pages/movie/search/search",
+    "pages/movie/movie-detail/celebrity/celebrity",
+    "pages/movie/movie-detail/rating/rating",  
+    "pages/movie/movie-detail/movie-poster/movie-poster"
+
 
   ],
   "window": {
