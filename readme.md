@@ -5,15 +5,17 @@
 > 关于我，欢迎关注  
   博客：[卡牌大叔](https://tedQB.github.io) 
   持续关注和分享：
-  * 前端开发 性能优化 多终端开发 技术原理 
-  * 交易理念 技术分析 供求分析 交易记录
+  前端开发 性能优化 多终端开发 技术原理 
+  交易理念 技术分析 供求分析 交易记录
 
 
-#### 示例:  
-![图片1](https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-03.jpg?raw=true){:height="50%" width="50%"}
-![图片2](https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-14.jpg?raw=true){:height="50%" width="50%"}
-![图片3](https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-48.jpg){:height="50%" width="50%"}
-![图片3](https://github.com/tedQB/TinyWxApp/blob/master/pages/images/oGebq0Duvk5FKAslYd1rhAwQk2nw.jpg){:height="50%" width="50%"}
+#### 示例: 
+<img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-03.jpg?raw=true" width=280 />
+
+<img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-14.jpg?raw=true" width=280 />
+
+<img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-48.jpg?raw=true" width=280 />
+
 
 ###原理说明
 基于微信小程序原生API 进行开发
