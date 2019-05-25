@@ -13,7 +13,7 @@
 <img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-03.jpg?raw=true" width=280 /><img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-14.jpg?raw=true" width=280 /><img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/Xnip2019-05-25_08-43-48.jpg?raw=true" width=280 /><img src="https://github.com/tedQB/TinyWxApp/blob/master/pages/images/oGebq0Duvk5FKAslYd1rhAwQk2nw.jpg?raw=true" width=130>
 
 
-###原理说明
+### 原理说明
 基于微信小程序原生API 进行开发
 
 
