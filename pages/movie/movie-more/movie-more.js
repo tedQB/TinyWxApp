@@ -117,6 +117,8 @@ Page({
                     movies: movies
                 }
                 that.setData(readyData);
+                console.log(readyData);
+                
             },
             fail: function () {
                 // fail
